@@ -1,0 +1,16 @@
+{
+  "name": "vtl-reusability",
+  "version": "1.0.0",
+  "description": "Explore on how to reuse code in VTL",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "clean": "rimraf dist",
+    "build": "ejs-cli --base-dir src/vtl \"**/*.vtl\" --out dist/vtl/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs-cli": "^2.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
